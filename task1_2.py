@@ -15,11 +15,11 @@ def numerical_integration(lower, upper, n):
 
     return totalArea
 
-@app.route('https://integration-cxebfcgbcqhxbnfy.westeurope-01.azurewebsites.net/test', methods=['GET'])
+@app.route('/test', methods=['GET'])
 def test():
     return jsonify({"This is a test"})
 
-@app.route('https://integration-cxebfcgbcqhxbnfy.westeurope-01.azurewebsites.net/<lower>/<upper>', methods=['GET'])
+@app.route('/<lower>/<upper>', methods=['GET'])
 def get_integral(lower, upper):
     lower = float(lower)
     upper = float(upper)
