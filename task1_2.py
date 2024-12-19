@@ -17,7 +17,7 @@ def numerical_integration(lower, upper, n):
 
 @app.route('/test')
 def test():
-    return jsonify({"This is a test"})
+    return 'this is a test'
 
 @app.route('/<lower>/<upper>', methods=['GET'])
 def get_integral(lower, upper):
