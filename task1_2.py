@@ -15,7 +15,7 @@ def numerical_integration(lower, upper, n):
 
     return totalArea
 
-@app.route('/test', methods=['POST'])
+@app.route('/test', methods=['GET'])
 def test():
     return jsonify({"This is a test"})
 
